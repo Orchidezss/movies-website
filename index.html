@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CidPlixx</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="src/icons/logo.svg" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jaro:opsz@6..72&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CDN Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- CDN AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav-bar container-fluid">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo d-flex">
+          <img src="src/icons/logo.svg" alt="" />
+          <p>Cid<span>Plixx</span></p>
+        </div>
+        <div class="navlinks">
+          <a href="">Home</a>
+          <a href="">Genre</a>
+          <a href="">Popular</a>
+          <a href="">Drama</a>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search movies here.." />
+          <img src="src/icons/search.svg" alt="" />
+        </div>
+        <img
+          src="src/icons/ham-menu.svg"
+          alt=""
+          id="ham-menu"
+          onclick="menuActive()"
+        />
+      </div>
+    </nav>
+    <nav class="menu-mobile">
+      <div class="search">
+        <input type="text" placeholder="Search movies here.." />
+        <img src="src/icons/search.svg" alt="" />
+      </div>
+      <div>
+        <div class="activelinks">
+          <a href="">Home</a>
+          <a href="">Genre</a>
+          <a href="">Popular</a>
+          <a href="">Drama</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero container-fluid" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 id="hl1">Grab your <span>snack.</span></h1>
+            <h1 id="hl2">and <span>chill.</span></h1>
+            <button id="btn">Watch Movie!</button>
+          </div>
+          <div class="hero-image">
+            <img class="popcorn" src="src/popcorn.png" alt="" width="438" />
+          </div>
+        </div>
+      </div>
+      <img class="hero-accent" src="src/hero-accent.svg" alt="" />
+    </section>
+
+    <!-- Movies Section -->
+    <section class="movies container-fluid" id="movies">
+      <div class="container">
+        <h2
+          data-aos="fade-right"
+          data-aos-offset="250"
+          data-aos-duration="1200"
+        >
+          Movies
+        </h2>
+        <div class="movies-list">
+          <div
+            class="movie-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+          >
+            <img src="src/movie/Toy_Story_film.jpg" alt="" width="192" />
+            <div class="movie-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="movie-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="100"
+          >
+            <img src="src/movie/Toy_Story_film.jpg" alt="" width="192" />
+            <div class="movie-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="movie-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="150"
+          >
+            <img src="src/movie/Toy_Story_film.jpg" alt="" width="192" />
+            <div class="movie-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="movie-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
+            <img src="src/movie/Toy_Story_film.jpg" alt="" width="192" />
+            <div class="movie-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="movie-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="250"
+          >
+            <img src="src/movie/Toy_Story_film.jpg" alt="" width="192" />
+            <div class="movie-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="movie-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+          >
+            <img src="src/movie/Toy_Story_film.jpg" alt="" width="192" />
+            <div class="movie-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="movie-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="350"
+          >
+            <img src="src/movie/Toy_Story_film.jpg" alt="" width="192" />
+            <div class="movie-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="movie-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          >
+            <img src="src/movie/Toy_Story_film.jpg" alt="" width="192" />
+            <div class="movie-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="movie-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="450"
+          >
+            <img src="src/movie/Toy_Story_film.jpg" alt="" width="192" />
+            <div class="movie-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="movie-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="500"
+          >
+            <img src="src/movie/Toy_Story_film.jpg" alt="" width="192" />
+            <div class="movie-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="movie-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="550"
+          >
+            <img src="src/movie/Toy_Story_film.jpg" alt="" width="192" />
+            <div class="movie-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+        </div>
+        <h2
+          data-aos="fade-right"
+          data-aos-offset="250"
+          data-aos-duration="1200"
+        >
+          Tv Shows
+        </h2>
+        <div class="tvshows-list">
+          <div
+            class="tvshow-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+          >
+            <img src="src/movie/starwars.jpg" alt="" width="192" />
+            <div class="tvshow-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="tvshow-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="100"
+          >
+            <img src="src/movie/starwars.jpg" alt="" width="192" />
+            <div class="tvshow-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="tvshow-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="150"
+          >
+            <img src="src/movie/starwars.jpg" alt="" width="192" />
+            <div class="tvshow-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="tvshow-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
+            <img src="src/movie/starwars.jpg" alt="" width="192" />
+            <div class="tvshow-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="tvshow-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="250"
+          >
+            <img src="src/movie/starwars.jpg" alt="" width="192" />
+            <div class="tvshow-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="tvshow-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+          >
+            <img src="src/movie/starwars.jpg" alt="" width="192" />
+            <div class="tvshow-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="tvshow-card"
+            data-aos="fade-up"
+            data-aos-offset="350"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+          >
+            <img src="src/movie/starwars.jpg" alt="" width="192" />
+            <div class="tvshow-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="tvshow-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          >
+            <img src="src/movie/starwars.jpg" alt="" width="192" />
+            <div class="tvshow-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="tvshow-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="450"
+          >
+            <img src="src/movie/starwars.jpg" alt="" width="192" />
+            <div class="tvshow-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="tvshow-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="500"
+          >
+            <img src="src/movie/starwars.jpg" alt="" width="192" />
+            <div class="tvshow-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+          <div
+            class="tvshow-card"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-duration="1200"
+            data-aos-delay="550"
+          >
+            <img src="src/movie/starwars.jpg" alt="" width="192" />
+            <div class="tvshow-title">
+              <p>Movie Title</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statue Section -->
+    <section class="statue container-fluid">
+      <div class="container">
+        <div class="statement">
+          <h1
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-duration="1150"
+          >
+            Do Heros always
+          </h1>
+          <h1
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-duration="1150"
+            data-aos-delay="100"
+          >
+            wear a <span>cape?</span>
+          </h1>
+          <iframe
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-duration="1150"
+            data-aos-delay="200"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/aWzlQ2N6qqg?si=DaiMAEf8wwr1e3FW"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <img
+          src="src/hero-statue.png"
+          alt=""
+          data-aos="fade-up"
+          data-aos-offset="700"
+          data-aos-duration="1100"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Adhwa Aulia Prabasa. All rights reserved.</p>
+      <a
+        href="https://www.freepik.com/free-vector/set-popcorn-buckets-side-top-view_36533212.htm#fromView=keyword&page=1&position=1&uuid=e860e056-34f8-429b-bb99-97698154c618&new_detail=true"
+        >3D Popcorn Illustration - By upkiyak - freepik</a
+      >
+      <a
+        href="https://www.freepik.com/free-vector/alien-character-spacesuit-isolated-background-vector-cartoon-illustration-green-extraterrestrial-astronaut-spaceman-costume-smiling-humanoid-cosmonaut_21475752.htm#fromView=keyword&page=2&position=15&uuid=1051c70e-4075-4fd2-969f-f382d8c0a1c0&new_detail=true"
+        >Alien Illustration - By upkiyak - freepik</a
+      >
+    </footer>
+    <!-- CDN Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const menuMobile = document.querySelector(".menu-mobile");
+      function menuActive() {
+        menuMobile.classList.toggle("active");
+      }
+    </script>
+
+    <!-- CDN GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+      gsap.from(".popcorn", { duration: 2, rotation: 80, x: 1500, opacity: 0 });
+      gsap.from("#hl2", {
+        duration: 2,
+        y: -700,
+        ease: "bounce",
+        delay: 1.5,
+        rotation: -45,
+      });
+      gsap.from("#hl1", {
+        duration: 3,
+        y: -700,
+        ease: "bounce",
+        delay: 1.5,
+        rotation: 65,
+      });
+      gsap.to(".hero button", { duration: 2, opacity: 100, delay: 2 });
+    </script>
+
+    <!-- CDN AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
