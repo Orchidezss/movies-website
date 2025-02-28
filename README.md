@@ -23,7 +23,7 @@ This is my project in web development, where I created a simple website to displ
 ## 🚀 How to Run
 1. Clone this repository to your computer:
    ```sh
-   git clone https://github.com/username/movies-website.git
+   git clone https://github.com/Orchidezss/movies-website.git
    ```
 2. Open the `index.html` file in your favorite browser.
 3. Enjoy this simple movie website!
